@@ -1,0 +1,41 @@
+.catagory {
+  height: 350px;
+  width: 280px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catagory img {
+    width: 90%;
+    height: 80%;
+    object-fit: contain;
+    max-height: 250px;
+    padding: 0 10px;
+    
+}
+.catagory a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+.catagory h2,
+.catagory p {
+  padding: 10px;
+  margin-left: 15px;
+}
+.catagory p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+}
+
+.catagory_container {
+  position: relative;
+  margin-top: -10%;
+  margin-bottom: -10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  max-width: 1600px;
+  gap:50px ;
+  margin-right: auto;
+  margin-left: auto ;
+  place-items: center;
+}
