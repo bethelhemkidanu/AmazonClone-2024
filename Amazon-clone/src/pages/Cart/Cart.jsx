@@ -40,10 +40,9 @@ const decrement = (id)=> {
             <p>Opps !! No item in your cart</p>
           ) : (
             basket?.map((item, i) => {
-              return (
-                <section className={classes.cart_product}>
+              return <section className={classes.cart_product} key={i}>
                   <ProductCard
-                    key={i}
+                    // key={id}
                     product={item}
                     renderDesc={true}
                     renderAdd={false}
@@ -56,7 +55,7 @@ const decrement = (id)=> {
                     >
                       <IoIosArrowUp size={30} />
                     </button>
-                    <span>{basket?.length}</span>
+                    <span>{item.amount}</span>
                     <button
                       className={classes.btn}
                       onClick={() => decrement(item.id)}
@@ -65,7 +64,7 @@ const decrement = (id)=> {
                     </button>
                   </div>
                 </section>
-              );
+              
             })
           )}
 

@@ -54,6 +54,16 @@
   background-color: rgb(242, 242,241);
   border-radius: 5px;
 }
+.subtotal a {
+  text-align: center;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
 .subtotal a:hover {
   background: var(--primary-shade);
 }
